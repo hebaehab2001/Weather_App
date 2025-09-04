@@ -77,7 +77,7 @@ document.getElementById('input2').addEventListener('input', (e) => {
 async function getData(location) {
 
     try {
-        let myReq = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${location}&days=3&aqi=no&alerts=no`, { method: 'GET' })
+        let myReq = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${location}&days=3&aqi=no&alerts=no`, { method: 'GET' })
         if (myReq.status >= 200 && myReq.status < 300) {
             myresponse = await myReq.json();
             // date
