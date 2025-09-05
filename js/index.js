@@ -17,8 +17,7 @@ const currentdate = document.getElementById('currentdate');
 const table = document.getElementById('table');
 const alert = document.getElementById('alert');
 let myresponse = [];
-// getLocation();
-getData('cairo');
+getLocation();
 
 async function getLocation() {
     try {
